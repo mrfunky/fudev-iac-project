@@ -1,0 +1,77 @@
+# Terraform Infrastructure Files
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Variable Files
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Terraform Plan Files
+*.tfplan
+
+# Backup Files
+*.backup
+terraform.tfvars.backup
+backend-config/terraform.tfvars.backup
+
+# Azure Specific Secrets
+**/azurekeys.txt
+**/azure.conf
+**/*connection_string*
+**/*connectionstring*
+**/*access_key*
+**/*accesskey*
+backend.conf
+.azure/
+
+# Security and Secrets
+**/.secrets/*
+**/secrets/*
+*.key
+**/*.pem
+**/*.key
+**/*.pfx
+**/*.p12
+**/*.asc
+**/*.secret
+
+# Environment Files
+.env
+.env.*
+!.env.example
+
+# IDE and Editor Files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# CLI Configuration
+.terraformrc
+terraform.rc
+
+# Script and Build Output
+scripts/output/*
+!scripts/output/.gitkeep
+*.log
+*.error.log
+*.bak
+
+# Generated Files
+*.out
+*.exe
+*.class
+*.pyc
+*.o
+
+# Backend-specific VS Code settings
+backend-config/.vscode/settings.json
+backend-config/.vscode/tasks.json
+backend-config/terraform.tfvars.backup
